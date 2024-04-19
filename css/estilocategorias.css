@@ -1,28 +1,27 @@
-
-
-
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image:url('../img/fondo_camuflaje.jpg');
+    background-image: url('../img/fondo_camuflaje.jpg');
 }
 
 header {
     background-color: #333;
     color: white;
-    padding: 40px;
+    padding: 20px;
     display: flex;
-    justify-content: flex-start; 
-    align-items: center; 
+    justify-content: space-between; /* Alinear elementos horizontalmente */
+    align-items: center; /* Alinear elementos verticalmente */
 }
+
 h1 {
-    margin: 0; 
+    margin: 0;
+    font-size: 24px; /* Tamaño del título */
 }
+
 .logo-image {
-    border-radius: 10px; 
-    height: 50px; 
-    margin-right: 10px; 
+    height: 40px; /* Tamaño del logo */
 }
 
 .section-container {
@@ -87,7 +86,6 @@ p {
     box-shadow: 0 0 10px white;
 }
 
-
 /* Estilos para los filtros */
 .filtro {
     background-color: #fff;
@@ -135,50 +133,40 @@ p {
     background-color: #333;
 }
 
+/* Estilos para dispositivos de pantalla pequeña */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px; /* Reducir el espacio en el encabezado */
+    }
 
+    h1 {
+        font-size: 20px; /* Reducir el tamaño del título */
+    }
 
-header {
-    position: relative;
-    padding: 10px 20px;
+    .logo-image {
+        height: 30px; /* Reducir el tamaño del logo */
+    }
+
+    .back-button {
+        padding: 6px 10px; /* Reducir el tamaño del botón Volver */
+    }
+
+    .section-container {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .pistola-box {
+        width: calc(50% - 20px); /* Ajustar el tamaño de las cajas de pistola */
+    }
 }
 
-.back-button {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    padding: 5px 15px;
-    background-color: #000000;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+/* Estilos para dispositivos de pantalla extra pequeña */
+@media screen and (max-width: 576px) {
+    .pistola-box {
+        width: calc(100% - 20px); /* Ajustar el tamaño de las cajas de pistola */
+    }
 }
-
-.back-button:hover {
-    background-color: black;
-}
-
-
-
-
-#miBoton {
-    padding: 10px 20px;
-    font-size: 16px;
-    color: white;
-    background-color: #000000;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#miBoton:hover {
-    background-color: #333;
-}
-
-
-
-
 
 
 
