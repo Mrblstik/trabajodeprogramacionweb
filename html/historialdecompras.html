@@ -3,31 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito de Compras</title>
-    <link rel="stylesheet" href="../css/carrito.css">
+    <title>Historial de compras</title>
+    <link rel="stylesheet" href="../css/historialcompras.css">
 </head>
 <body>
     <div class="header">
-        <button class="button" onclick="window.location='../html/index.html'">Volver a la Tienda</button>
+        <button class="button">Volver</button>
         <div class="search-bar">
-            <input type="text" placeholder="Buscar en el carrito...">
+            <input type="text" placeholder="Buscar en el historial">
             <button class="search-button">Buscar</button>
         </div>
     </div>
+
     <div class="shopping-cart">
-        <h2>Tu Carrito de Compras</h2>
+        <h2>Tu historial de compras</h2>
 
         <div class="cart-item">
             <img src="../img/1911_de_oro.jpg" alt="Producto" class="product-image">
             <div class="product-details">
-                <h3>Pistola Dorada Colt 1911</h3>
+                <h3 class="product-name">Pistola Dorada Colt 1911</h3>
                 <p>$7.000.000</p>
             </div>
-            <input type="number" class="quantity" value="1" min="1">
-            <button class="remove-button">Eliminar</button>
         </div>
-
-        <button class="pay-button" onclick="location.href='../html/pagar.html'">Pagar</button>
     </div>
 </body>
 </html>

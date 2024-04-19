@@ -1,0 +1,139 @@
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Estilos para el encabezado */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button, .search-button {
+    padding: 10px 20px;
+    background-color: black; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover, .search-button:hover {
+    background-color: green;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-button:hover {
+    background-color: #333;
+}
+
+/* Estilos para el carrito de compras */
+.shopping-cart {
+    background-color: white;
+    margin: 20px auto;
+    width: 80%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #333;
+    position: relative;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f4f4f4;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.product-image {
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-details {
+    flex-grow: 1; /* El contenido crecerá para ocupar el espacio disponible */
+    margin-left: 20px; /* Separación entre la imagen y los detalles del producto */
+}
+
+.product-name {
+    margin: 0;
+    text-align: center; /* Centra el texto */
+}
+
+.product-details h3, .product-details p {
+    margin: 0;
+    color: #333;
+}
+
+/* Estilos para dispositivos pequeños */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        margin-right: 0; /* Elimina el margen derecho en dispositivos pequeños */
+    }
+
+    .cart-item {
+        flex-direction: column;
+        text-align: center; /* Centra los elementos en dispositivos pequeños */
+    }
+
+    .product-image {
+        margin-bottom: 10px; /* Espacio entre la imagen y los detalles del producto */
+    }
+
+    .product-details {
+        margin-left: 0; /* Elimina el margen izquierdo en dispositivos pequeños */
+    }
+}
+
+/* Estilos para dispositivos extra pequeños */
+@media (max-width: 576px) {
+    .button, .search-button {
+        font-size: 14px; /* Reducir el tamaño del botón en dispositivos extra pequeños */
+    }
+}
+
