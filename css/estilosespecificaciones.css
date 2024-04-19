@@ -1,0 +1,75 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('../img/fondo_camuflaje.jpg');
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px; /* Añade espacio en la parte inferior del contenedor principal */
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Añade un margen debajo del contenedor de la imagen */
+}
+.centered-image {
+    max-width: 80%;
+    height: auto;
+}
+.specs-container {
+    margin-top: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px; /* Añade relleno alrededor del cuadro de especificaciones */
+    border: 2px solid white; /* Añade un borde al cuadro de especificaciones */
+    background-color: #333; /* Agrega un fondo semi-transparente */
+}
+.specs {
+    font-size: 16px;
+    text-align: left;
+    color: white;
+}
+.back-button-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+.back-button, .cart-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cart-button {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Añade espacio debajo del botón 'Añadir al carrito' */
+}
+
+/* Media queries para ajustes responsivos en dispositivos más pequeños */
+@media (max-width: 768px) {
+    .centered-image, .specs-container {
+        max-width: 90%;
+    }
+    .specs {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .centered-image, .specs-container {
+        max-width: 95%;
+    }
+    .specs {
+        font-size: 12px;
+    }
+}

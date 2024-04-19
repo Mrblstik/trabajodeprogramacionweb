@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago con Tarjeta</title>
+    <link rel="stylesheet" href="../css/pagar.css">
+</head>
+<body>
+    <div class="payment-container">
+        <button class="back-button" onclick="history.back()">Volver</button>
+        <h2>Pago con Tarjeta</h2>
+        <form action="/submit-payment" method="POST">
+            <div class="form-group">
+                <label for="cardName">Nombre en la Tarjeta</label>
+                <input type="text" id="cardName" name="cardName" required>
+            </div>
+            <div class="form-group">
+                <label for="cardNumber">Número de Tarjeta</label>
+                <input type="text" id="cardNumber" name="cardNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="cardExpiry">Fecha de Vencimiento</label>
+                <input type="month" id="cardExpiry" name="cardExpiry" required>
+            </div>
+            <div class="form-group">
+                <label for="cardCVC">CVC</label>
+                <input type="text" id="cardCVC" name="cardCVC" required>
+            </div>
+            <button type="submit" class="pay-button">Pagar</button>
+        </form>
+    </div>
+</body>
+</html>

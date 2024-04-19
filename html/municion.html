@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de municiones Amu-Nation</title>
+    <link rel="stylesheet" href="../css/estilocategorias.css">
+    <link rel="stylesheet" href="../css/filtro.css"> <!-- Estilos para la columna de filtros -->
+</head>
+<body>
+    <header>
+        <h1>Catálogo de municiones</h1>
+        <img src="../img/icono_pagina.png" alt="Logo" class="logo-image">
+        <button onclick="history.back()" class="back-button">Volver</button>
+    </header>
+    
+    <div class="section-container">
+        <div class="filtro">
+            <h2>Filtros</h2>
+            <div class="filtro-option">
+                <label for="Calibre">Calibre:</label>
+                <select id="Calibre">
+                    <option value="todos">Todos</option>
+                    <option value="9mm">9mm</option>
+                    <option value=".38">.38</option>
+                    <option value=".45">.45</option>
+                    <option value=".357">.357</option>
+                    <option value=".50">.50</option>
+                    <option value="5.56mm">5.56mm</option>
+                    <option value="5.45mm">5.45mm</option>
+                    <option value="7.62mm">7.62mm</option>
+                    <option value="5.7mm">5.7mm</option>
+                    <option value="12.7mm">12.7mm</option>
+                    <option value="5.8mm">5.8mm</option>
+                    <option value=".12">.12</option>
+                    <option value=".20">.20</option>
+                    <!-- Agrega más opciones de tallas según sea necesario -->
+                </select>
+            </div>
+            <div class="button-container">
+                <button id="filtrar">Filtrar</button>
+                <button id="limpiar-filtros">Limpiar Filtros</button>
+            </div>
+        </div>
+
+        <div id="filter">
+            <label for="sort">Ordenar por:</label>
+            <select id="sort">
+                <option value="precioMayor">Precio (Mayor a Menor)</option>
+                <option value="precioMenor">Precio (Menor a Mayor)</option>
+            </select>
+        </div>
+
+        <div id="pistola">
+            <!-- Artículo uno -->
+            <div class="pistola-box" data-precio="50" data-Calibre="7.62mm">
+                <img src="../img/ammo7.62x39mm.jpg" alt="Artículo 1">
+                <p>Caja de municion 7.62x39mm</p>
+                <p>$49.990</p>
+                <button id="miBoton">Añandir al carrito</button>
+            </div>
+
+            <!-- Artículo dos -->
+            <div class="pistola-box" data-precio="50" data-Calibre="7.62mm">
+                <img src="../img/ammo7.62x54R.jpg" alt="Artículo 1">
+                <p>Caja de municion 7.62x54R</p>
+                <p>$59.990</p>
+                <button id="miBoton">Añandir al carrito</button>
+            </div>
+
+            <!-- Artículo tres -->
+            <div class="pistola-box" data-precio="50" data-Calibre="5.56mm">
+                <img src="../img/ammo5.56x45mm_NATO.jpg" alt="Artículo 1">
+                <p>Caja de municion 5.56x45mm OTAN</p>
+                <p>$54.990</p>
+                <button id="miBoton">Añandir al carrito</button>
+            </div>
+
+            <!-- Artículo cuatro -->
+            <div class="pistola-box" data-precio="50" data-Calibre="9mm">
+                <img src="../img/ammo9x19mmParabellum.webp" alt="Artículo 1">
+                <p>Caja de municion 9x19mm Parabellum</p>
+                <p>$19.990</p>
+                <button id="miBoton">Añandir al carrito</button>
+            </div>
+
+            <!-- Artículo cinco -->
+            <div class="pistola-box" data-precio="50" data-Calibre="9mm">
+                <img src="../img/ammo9mmMakarov.jpg" alt="Artículo 1">
+                <p>Caja de municion 9x18mm Makarov</p>
+                <p>$17.990</p>
+                <button id="miBoton">Añandir al carrito</button>
+            </div>
+
+            <!-- Artículo seis -->
+            <div class="pistola-box" data-precio="50" data-Calibre=".357">
+                <img src="../img/ammo.357Magnum.jpeg" alt="Artículo 1">
+                <p>Caja de municion .357 Magnum</p>
+                <p>$28.990</p>
+                <button id="miBoton">Añandir al carrito</button>
+            </div>
+
+            <!-- Artículo siete -->
+            <div class="pistola-box" data-precio="50" data-Calibre=".38">
+                <img src="../img/ammo.38Remington.jpg" alt="Artículo 1">
+                <p>Caja de municion .38 Remington</p>
+                <p>$15.990</p>
+                <button id="miBoton">Añandir al carrito</button>
+            </div>
+
+            <!-- Puedes agregar más artículos aquí según sea necesario -->
+        </div>
+    </div>
+
+    <script src="../js/ordenarpistola.js"></script>
+    <script src="../js/filtropistola.js"></script>
+    <script src="../js/limpiarpistola.js"></script>
+
+</body>
+</html>

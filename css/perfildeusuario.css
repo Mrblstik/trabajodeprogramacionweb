@@ -1,0 +1,88 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:url('../img/fondo_camuflaje.jpg');
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilos para el encabezado */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.icons {
+    float: right;
+}
+
+.icons a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Estilos para el perfil de usuario */
+.profile {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-icon {
+    text-align: center;
+}
+
+.profile-options {
+    margin-left: 50px;
+}
+
+.profile-options h2 {
+    margin-top: 0;
+}
+
+.profile-options ul {
+    list-style: none;
+    padding: 0;
+}
+
+.profile-options ul li {
+    margin-bottom: 10px;
+}
+
+.profile-options ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.profile-options ul li a:hover {
+    text-decoration: underline;
+}
+
+.edit-profile-btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-profile-btn:hover {
+    background-color: #0056b3;
+}
+
+

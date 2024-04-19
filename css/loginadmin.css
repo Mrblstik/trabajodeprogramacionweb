@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image:url('../img/fondo_camuflaje.jpg');
+}
+
+.login-container {
+    background: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    width: 300px; /* Ancho del contenedor */
+    text-align: center; /* Alineación del texto */
+     /* Para posicionar el botón correctamente */
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 16px); /* Ancho del input */
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+button {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background-color: #000000;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+.volver-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}

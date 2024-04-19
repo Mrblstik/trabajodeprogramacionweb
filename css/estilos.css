@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:url('../img/fondo_camuflaje.jpg');
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 40px;
+    display: flex;
+    justify-content: center; /* Alinea los elementos al extremo */
+    align-items: center; /* Alinea verticalmente los elementos */
+    position: relative;
+}
+
+h1 {
+    margin: 0; /* Elimina el margen del título */
+    display: flex; /* Utilizamos flexbox para alinear verticalmente los elementos */
+    align-items: center; /* Alinea verticalmente */
+}
+
+.logo-image {
+    height: 50px; /* Ajusta la altura del logo según sea necesario */
+    /* Agrega cualquier otro estilo necesario para la imagen */
+    margin-left: 05px; /* Ajusta el margen izquierdo */
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+h2 {
+    color: white;
+}
+
+p {
+    line-height: 1.6;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* Estilos para los botones */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-container button:hover {
+    background-color: #333;
+}
+
+a.icon {
+    font-size: 24px; /* Tamaño del ícono */
+    color: white; /* Color amarillo */
+}
+
+/* Estilos para el icono de perfil */
+.profile-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px; /* Agrega un margen a la derecha para separarlo del carrito */
+}
+
+.profile-icon button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.profile-icon button:hover {
+    text-decoration: underline;
+}
+
+.profile-icon i {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 5px;
+}
+
