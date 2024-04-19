@@ -9,57 +9,48 @@ body {
 .header {
     background-color: #333;
     box-shadow: 0 2px 4px #333;
-    padding: 10px 20px;
+    padding: 10px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 
-.button, .pay-button {
+.button, .pay-button, .search-button {
     padding: 10px 20px;
     background-color: black; 
-    color: white;
+    color: rgb(255, 255, 255);
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    margin-bottom: 10px; /* Añadido */
+    width: 100%; /* Añadido */
 }
 
-.button:hover, .pay-button:hover {
+.button:hover, .pay-button:hover, .search-button:hover {
     background-color: green;
 }
 
 .search-bar {
     display: flex;
     align-items: center;
+    flex-grow: 1; /* Añadido */
 }
 
 input[type="text"] {
     padding: 10px;
     border: 2px solid #333;
     border-radius: 5px;
-    width: 300px;
+    width: calc(100% - 110px); /* Modificado */
     margin-right: 10px;
-}
-
-.search-button {
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.search-button:hover {
-    background-color: #333;
 }
 
 .shopping-cart {
     background-color: black;
     margin: 20px auto;
-    width: 80%;
+    width: 90%; /* Modificado */
+    max-width: 600px; /* Añadido */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 8px #333;
@@ -87,11 +78,39 @@ input[type="text"] {
     color: white;
 }
 
+.quantity-container {
+    display: flex;
+    align-items: center;
+}
+
 .quantity {
     width: 50px;
     padding: 5px;
     border-radius: 5px;
     border: 1px solid #aaa;
+    text-align: center;
+}
+
+.quantity-button {
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.quantity-button:hover {
+    background-color: #333;
+}
+
+.quantity-button.increment {
+    margin-left: 5px;
+}
+
+.quantity-button.decrement {
+    margin-right: 5px;
 }
 
 .remove-button {
@@ -99,7 +118,7 @@ input[type="text"] {
     background-color: red;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
     cursor: pointer;
 }
 
@@ -109,4 +128,38 @@ input[type="text"] {
 
 h2 {
     color: white;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .header {
+        padding: 10px;
+        flex-direction: column; /* Cambio de dirección en dispositivos móviles */
+        align-items: stretch; /* Alineación de elementos en dispositivos móviles */
+    }
+
+    input[type="text"] {
+        width: 100%; /* Ancho completo en dispositivos móviles */
+        margin: 0 0 10px 0; /* Añadido */
+    }
+
+    .shopping-cart {
+        width: 95%; /* Modificado */
+    }
+
+    .product-details h3 {
+        font-size: 14px;
+    }
+
+    .search-button {
+        width: auto; /* Ancho automático en dispositivos móviles */
+    }
+
+    .quantity {
+        width: 40px; /* Modificado para dispositivos móviles */
+    }
+
+    .quantity-button {
+        font-size: 14px; /* Modificado para dispositivos móviles */
+    }
 }

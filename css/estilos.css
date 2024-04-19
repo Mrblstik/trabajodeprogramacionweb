@@ -5,21 +5,45 @@ body {
     background-image:url('../img/fondo_camuflaje.jpg');
 }
 
+
+
 header {
     background-color: #333;
     color: white;
-    padding: 40px;
+    padding: 20px;
     display: flex;
-    justify-content: center; /* Alinea los elementos al extremo */
-    align-items: center; /* Alinea verticalmente los elementos */
-    position: relative;
+    justify-content: space-between; /* Distribuye los elementos a lo largo del header */
+    align-items: center;
 }
 
 h1 {
     margin: 0; /* Elimina el margen del título */
-    display: flex; /* Utilizamos flexbox para alinear verticalmente los elementos */
-    align-items: center; /* Alinea verticalmente */
 }
+
+/* Estilos para el icono de perfil y los iconos de salida y carrito */
+.profile-icon,
+.icon {
+    margin-right: 20px; /* Ajusta el margen derecho para separar los iconos */
+}
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .logo-image {
     height: 50px; /* Ajusta la altura del logo según sea necesario */
@@ -30,17 +54,17 @@ h1 {
 section {
     padding: 20px;
     margin: 20px;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     border-radius: 10px;
 }
 
 h2 {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 p {
     line-height: 1.6;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 img {
