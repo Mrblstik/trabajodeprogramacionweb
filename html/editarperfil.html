@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil de Usuario</title>
-    <link href="../css/editarperfil.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/editarperfil.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -16,28 +17,33 @@
             </div>
         </header>
         
-        <main class="profile">
-            <div class="profile-icon">
+        <main class="profile row">
+            <div class="col-md-4 profile-icon">
                 <i class="fas fa-user-circle fa-5x"></i>
             </div>
-            <div class="profile-options">
+            <div class="col-md-8 profile-options">
                 <h2>Mi Perfil</h2>
                 <form class="profile-form">
                     <div class="form-group">
                         <label for="name">Nombre:</label>
-                        <input type="text" id="name" name="name">
+                        <input type="text" id="name" name="name" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="email">Correo electrónico:</label>
-                        <input type="email" id="email" name="email">
+                        <input type="email" id="email" name="email" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="phone">Número de teléfono:</label>
-                        <input type="tel" id="phone" name="phone">
+                        <input type="tel" id="phone" name="phone" class="form-control">
                     </div>
                 </form>
             </div>
         </main>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
