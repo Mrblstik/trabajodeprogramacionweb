@@ -2,82 +2,81 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('../img/fondo_camuflaje.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    position: relative; 
-}
-
-#volver {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    color: #fff;
-    text-decoration: none;
-}
-
-main {
-    padding: 20px;
-}
-
-#solicitud {
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 500px;
-    background-color: #fff;
-}
-
-#solicitud h2 {
-    margin-top: 0;
-}
-
-form {
     display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-bottom: 10px;
-}
-
-input[type="text"],
-input[type="number"] {
-    padding: 8px;
-    margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../img/fondo_camuflaje.jpg');
+  }
+  
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  textarea {
+    width: 100%;
+    padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #333;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .quantity-input {
+    display: flex;
+    align-items: center;
+  }
+  
+  .btn {
+    background-color: #007bff;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
+    padding: 10px 15px;
     cursor: pointer;
-}
-
-button:hover {
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-increase,
+  .btn-decrease {
+    margin: 0 5px;
+  }
+  
+  .btn-back {
+    position: absolute;
+    top: 10px;
+    left: 10px;
     background-color: #555;
-}
-
-footer {
-    background-color: #333;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
     color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+    cursor: pointer;
+  }
+  
+  @media (max-width: 480px) {
+    .btn-back {
+      top: 5px;
+      left: 5px;
+      padding: 3px 6px;
+    }
+  }
+  

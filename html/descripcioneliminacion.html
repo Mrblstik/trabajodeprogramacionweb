@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario de Usuario</title>
+<link rel="stylesheet" href="../css/descripcioneliminacion.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Porque quieres eliminar este usuario?</h2>
+    <form id="userForm">
+        <div class="form-group">
+            <label for="email">Correo:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Descripción:</label>
+            <textarea id="description" name="description" required></textarea>
+        
+    </form>
+    <button class="delete-btn">Eliminar</button>
+</div>
+
+<a href="verusuario.html" class="back-btn">Volver</a>
+
+</body>
+</html>
