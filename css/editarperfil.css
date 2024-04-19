@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 body, html {
     margin: 0;
     padding: 0;
@@ -72,7 +72,7 @@ body, html {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-    font-size: 1em; /* Tamaño de fuente predeterminado */
+    font-size: 1em; 
 }
 
 .profile-form input[type="text"],
@@ -104,6 +104,6 @@ body, html {
     }
 
     .profile-form label {
-        font-size: 0.9em; /* Reducir el tamaño del texto en dispositivos pequeños */
+        font-size: 0.9em; 
     }
 }
