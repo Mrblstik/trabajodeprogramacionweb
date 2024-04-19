@@ -1,4 +1,4 @@
-
+/* Estilos generales */
 body, html {
     margin: 0;
     padding: 0;
@@ -18,17 +18,14 @@ body, html {
     color: white;
     padding: 10px 20px;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.icons a {
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-    background: black; 
-    border-radius: 5px;
+.icons button {
     margin-left: 10px;
 }
-
 
 .profile {
     display: flex;
@@ -57,8 +54,19 @@ body, html {
     padding-left: 20px;
 }
 
+.profile-options h1 {
+    margin-top: 0;
+    font-size: 1.2em; /* Reduciendo el tamaño del título */
+}
+
+
 .profile-options h2 {
     margin-top: 0;
+}
+
+.icons .btn-save {
+    margin-top: 10px; /* Espacio entre el icono y el botón de guardar */
+    margin-left: auto; /* Mover el botón a la derecha */
 }
 
 
@@ -80,7 +88,7 @@ body, html {
 .profile-form input[type="tel"] {
     width: 100%; 
     padding: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #eee;
     border-radius: 2px;
 }
 
@@ -103,7 +111,26 @@ body, html {
         margin-bottom: 20px;
     }
 
+    .profile-options h1 {
+        font-size: 1em; /* Ajustando el tamaño del título en dispositivos pequeños */
+    }
+
     .profile-form label {
         font-size: 0.9em; 
     }
+}
+
+.icons .btn-save {
+    margin-top: 10px; 
+    margin-left: auto; 
+    background-color: #333; 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    padding: 8px 16px; 
+    cursor: pointer; 
+}
+
+.icons .btn-save:hover {
+    background-color: #333; 
 }
