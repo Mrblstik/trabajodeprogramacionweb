@@ -1,30 +1,30 @@
-// pagos.js
+
 
 $(document).ready(function() {
     $('#payment-form').submit(function(event) {
-      // Validar que ningún campo esté vacío
+     
       var formValid = true;
       $(this).find('input, select').each(function() {
         if (!$(this).val()) {
           formValid = false;
-          return false; // Salir del bucle each si se encuentra un campo vacío
+          return false; 
         }
       });
       if (!formValid) {
         alert('Por favor complete todos los campos.');
-        event.preventDefault(); // Evitar el envío del formulario si hay campos vacíos
+        event.preventDefault(); 
       } else {
-        // Redirigir a historialdecompras.html si todos los campos están completos
+        
         window.location.href = 'historialdecompras.html';
       }
     });
     
     $('#numero-tarjeta').on('input', function() {
-      // Eliminar todos los caracteres que no sean dígitos
+      
       var cardNumber = this.value.replace(/\D/g, '');
-      // Insertar un espacio después de cada conjunto de 4 dígitos
+      
       cardNumber = cardNumber.replace(/(.{4})/g, '$1 ').trim();
-      // Actualizar el valor del campo
+      
       this.value = cardNumber;
     });
     
@@ -36,7 +36,7 @@ $(document).ready(function() {
     });
     
     $('#cvv').on('input', function() {
-      // Reemplazar todos los caracteres por puntos
+      
       this.value = this.value.replace(/./g, '•');
     });
     
