@@ -10,7 +10,7 @@ body {
   
   .btn-primary {
     background-color: #000000; /* Gris oscuro */
-    border-color: #6c757d; /* Gris oscuro */
+    border-color: #000000; /* Gris oscuro */
   }
   
   .btn-primary:hover {
