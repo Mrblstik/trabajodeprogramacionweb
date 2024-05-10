@@ -1,77 +1,20 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;  
-    align-items: center;      
-    min-height: 100vh;        
-    
-}
-
-.payment-container {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    width: 300px;
-    max-width: 100%;  
-}
-
-.back-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 5px 10px;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-}
-
-.back-button:hover {
-    background-color: black;
-}
-
-h2 {
-    color: #333;
-    text-align: center;
-    margin-top: 0; 
-    margin-bottom: 20px; 
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 8px;
-    color: #666;
-}
-
-input[type="text"],
-input[type="month"] {
-    width: 100%;
-    padding: 4px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button.pay-button {
-    width: 100%;
-    padding: 10px;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-button.pay-button:hover {
-    background-color: green;
-}
+    background-color: #f8f9fa; /* Gris claro */
+    color: #212529; /* Negro */
+  }
+  
+  .card {
+    background-color: #ffffff; /* Blanco */
+    border: 1px solid #dee2e6; /* Gris claro */
+  }
+  
+  .btn-primary {
+    background-color: #000000; /* Gris oscuro */
+    border-color: #6c757d; /* Gris oscuro */
+  }
+  
+  .btn-primary:hover {
+    background-color: #495057; /* Gris */
+    border-color: #495057; /* Gris */
+  }
+  
