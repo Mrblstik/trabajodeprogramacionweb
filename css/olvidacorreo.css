@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 * {
     box-sizing: border-box;
 }
@@ -21,7 +21,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Estilos del formulario */
+
 .form-group {
     margin-bottom: 20px;
 }
@@ -49,7 +49,7 @@ button.submit-button:hover {
     background-color: #0056b3;
 }
 
-/* Estilos responsivos */
+
 @media (max-width: 768px) {
     .container {
         padding: 10px;

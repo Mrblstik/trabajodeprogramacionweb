@@ -1,13 +1,13 @@
-/* Estilos para la columna de filtros */
+
 .filtro {
-    float: left; /* Coloca la columna a la izquierda */
-    width: 200px; /* Ancho de la columna */
+    float: left; 
+    width: 200px; 
     padding: 20px;
     background-color: #f5f5f5;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos para las opciones de filtro */
+
 .filtro-option {
     margin-bottom: 15px;
 }
@@ -25,15 +25,15 @@
     background-color: #fff;
 }
 
-/* Estilos para el catálogo */
+
 #catalog {
-    margin-left: 240px; /* Para dejar espacio para la columna de filtros */
+    margin-left: 240px; 
 }
 
 .filtro {
     background-color: #333;
     padding: 20px;
-    border-radius: 10px; /* Agrega esquinas redondeadas */
+    border-radius: 10px; 
     margin-bottom: 20px;
     color: white;
 }

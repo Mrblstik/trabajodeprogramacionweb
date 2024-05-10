@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #333;
-    background-image: url('../img/fondo_camuflaje.jpg');
+    
 }
 
 .header {
@@ -24,8 +24,8 @@ body {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    margin-bottom: 10px; /* Añadido */
-    width: 100%; /* Añadido */
+    margin-bottom: 10px; 
+    width: 100%; 
 }
 
 .button:hover, .pay-button:hover, .search-button:hover {
@@ -35,22 +35,22 @@ body {
 .search-bar {
     display: flex;
     align-items: center;
-    flex-grow: 1; /* Añadido */
+    flex-grow: 1; 
 }
 
 input[type="text"] {
     padding: 10px;
     border: 2px solid #333;
     border-radius: 5px;
-    width: calc(100% - 110px); /* Modificado */
+    width: calc(100% - 110px); 
     margin-right: 10px;
 }
 
 .shopping-cart {
     background-color: black;
     margin: 20px auto;
-    width: 90%; /* Modificado */
-    max-width: 600px; /* Añadido */
+    width: 90%; 
+    max-width: 600px; 
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 8px #333;
@@ -130,21 +130,21 @@ h2 {
     color: white;
 }
 
-/* Media Queries para dispositivos móviles */
+
 @media (max-width: 768px) {
     .header {
         padding: 10px;
-        flex-direction: column; /* Cambio de dirección en dispositivos móviles */
-        align-items: stretch; /* Alineación de elementos en dispositivos móviles */
+        flex-direction: column; 
+        align-items: stretch; 
     }
 
     input[type="text"] {
-        width: 100%; /* Ancho completo en dispositivos móviles */
-        margin: 0 0 10px 0; /* Añadido */
+        width: 100%; 
+        margin: 0 0 10px 0; 
     }
 
     .shopping-cart {
-        width: 95%; /* Modificado */
+        width: 95%; 
     }
 
     .product-details h3 {
@@ -152,14 +152,14 @@ h2 {
     }
 
     .search-button {
-        width: auto; /* Ancho automático en dispositivos móviles */
+        width: auto; 
     }
 
     .quantity {
-        width: 40px; /* Modificado para dispositivos móviles */
+        width: 40px; 
     }
 
     .quantity-button {
-        font-size: 14px; /* Modificado para dispositivos móviles */
+        font-size: 14px; 
     }
 }

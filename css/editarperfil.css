@@ -1,9 +1,9 @@
-/* Estilos generales */
+
 body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-image: url('../img/fondo_camuflaje.jpg');
+   
 }
 
 .container {
@@ -56,7 +56,7 @@ body, html {
 
 .profile-options h1 {
     margin-top: 0;
-    font-size: 1.2em; /* Reduciendo el tamaño del título */
+    font-size: 1.2em; 
 }
 
 
@@ -65,8 +65,8 @@ body, html {
 }
 
 .icons .btn-save {
-    margin-top: 10px; /* Espacio entre el icono y el botón de guardar */
-    margin-left: auto; /* Mover el botón a la derecha */
+    margin-top: 10px; 
+    margin-left: auto; 
 }
 
 
@@ -112,7 +112,7 @@ body, html {
     }
 
     .profile-options h1 {
-        font-size: 1em; /* Ajustando el tamaño del título en dispositivos pequeños */
+        font-size: 1em; 
     }
 
     .profile-form label {

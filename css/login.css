@@ -1,52 +1,41 @@
-/* Estilos generales */
+
 body {
-    font-family: Arial, sans-serif;
-    color: white;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-image:url('../img/fondo_camuflaje.jpg');
+    background-color: #f8f9fa; 
+}
+
+.container {
+    margin-top: 50px;
 }
 
 .login-container {
-    background: #333;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 20px #333;
-    width: 300px; /* Ancho del contenedor */
-    text-align: center; /* Alineación del texto */
+    background-color: #fff; 
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.login-container h2 {
+    color: #000; 
 }
 
 .form-control {
-    margin-bottom: 10px;
+    border-color: #ccc; 
 }
 
-input[type="text"],
-input[type="password"] {
-    width: calc(100% - 16px); /* Ancho del input */
-    padding: 8px;
-    border: 1px solid white;
-    border-radius: 8px;
+.btn-primary {
+    background-color: #000; 
+    border-color: #000; 
 }
 
-button {
-    width: 100%;
-    padding: 8px;
-    border: none;
-    background-color: black;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
+.btn-primary:hover {
+    background-color: #333; 
+    border-color: #333; 
 }
 
-button:hover {
-    background-color: #333;
+.text-center a {
+    color: #000; 
 }
 
-.admin-button {
-    margin-top: 10px; /* Espacio entre los botones y el botón de administrador */
-    text-align: right; /* Alineación del botón de administrador */
+.text-center a:hover {
+    color: #333; 
 }

@@ -1,48 +1,80 @@
-function validarRegistro() {
-    var nombre = document.getElementById("nombre").value;
-    var apellido = document.getElementById("apellido").value;
-    var rut = document.getElementById("rut").value;
-    var telefono = document.getElementById("telefono").value;
-    var email = document.getElementById("email").value;
-    var password = document.getElementById("password").value;
-    var passwordRepeat = document.getElementById("passwordRepeat").value;
+document.getElementById('registroForm').addEventListener('submit', function(event) {
+    var nombre = document.getElementById('nombre').value.trim();
+    var apellido = document.getElementById('apellido').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var password = document.getElementById('password').value.trim();
+    var confirm_password = document.getElementById('confirm_password').value.trim();
+    var nombreError = document.getElementById('nombreError');
+    var apellidoError = document.getElementById('apellidoError');
+    var emailError = document.getElementById('emailError');
+    var passwordError = document.getElementById('passwordError');
+    var confirm_passwordError = document.getElementById('confirm_passwordError');
 
-    if (nombre === "" || apellido === "" || rut === "" || telefono === "" || email === "" || password === "" || passwordRepeat === "") {
-        alert("Por favor complete todos los campos.");
-        return;
+    var emailFormat = /^[a-zA-Z0-9._%+-]+@gmail\.com$/; 
+    var passwordFormat = /^(?=.*[a-z])(?=.*[A-Z]).{8,}$/; 
+
+    var isValid = true;
+
+    if (nombre === '') {
+        nombreError.textContent = 'Por favor, ingresa tu nombre';
+        nombreError.style.display = 'block';
+        isValid = false;
+    } else {
+        nombreError.style.display = 'none';
     }
 
-    if (nombre.length < 4 || apellido.length < 4) {
-        alert("El nombre y el apellido deben tener al menos 4 caracteres.");
-        return;
+    if (apellido === '') {
+        apellidoError.textContent = 'Por favor, ingresa tu apellido';
+        apellidoError.style.display = 'block';
+        isValid = false;
+    } else {
+        apellidoError.style.display = 'none';
     }
 
-    if (!/^\d{7,8}-[k|K|\d]{1}$/.test(rut)) {
-        alert("El RUT debe tener un formato válido (Ejemplo: 12345678-9).");
-        return;
+    if (email === '') {
+        emailError.textContent = 'Por favor, ingresa tu correo electrónico';
+        emailError.style.display = 'block';
+        isValid = false;
+    } else if (!emailFormat.test(email)) {
+        emailError.textContent = 'Por favor, ingresa un correo electrónico válido de Gmail';
+        emailError.style.display = 'block';
+        isValid = false;
+    } else {
+        emailError.style.display = 'none';
     }
 
-    if (!/^\d{9}$/.test(telefono)) {
-        alert("El número de teléfono debe tener exactamente 9 dígitos.");
-        return;
+    if (password === '') {
+        passwordError.textContent = 'Por favor, ingresa tu contraseña';
+        passwordError.style.display = 'block';
+        isValid = false;
+    } else if (password.length < 8) {
+        passwordError.textContent = 'La contraseña debe tener al menos 8 caracteres';
+        passwordError.style.display = 'block';
+        isValid = false;
+    } else if (!passwordFormat.test(password)) {
+        passwordError.textContent = 'La contraseña debe contener al menos una letra minúscula, una letra mayúscula y 8 caracteres como mínimo';
+        passwordError.style.display = 'block';
+        isValid = false;
+    } else {
+        passwordError.style.display = 'none';
     }
 
-    if (!/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(email)) {
-        alert("El correo electrónico debe tener un formato válido.");
-        return;
+    if (confirm_password === '') {
+        confirm_passwordError.textContent = 'Por favor, confirma tu contraseña';
+        confirm_passwordError.style.display = 'block';
+        isValid = false;
+    } else if (confirm_password !== password) {
+        confirm_passwordError.textContent = 'Las contraseñas no coinciden';
+        confirm_passwordError.style.display = 'block';
+        isValid = false;
+    } else {
+        confirm_passwordError.style.display = 'none';
     }
 
-    if (password.length < 8 || !/[A-Z]/.test(password) || !/[a-z]/.test(password) || !/\d/.test(password)) {
-        alert("La contraseña debe tener al menos 8 caracteres, incluir al menos una letra mayúscula, una letra minúscula y un número.");
-        return;
+    if (isValid) {
+        
+        window.location.href = 'login.html';
     }
 
-    if (password !== passwordRepeat) {
-        alert("Las contraseñas no coinciden.");
-        return;
-    }
-
-    // Si todas las validaciones son exitosas, redirigir a login.html
-    window.location.href = "../html/login.html";
-}
-
+    event.preventDefault();
+});

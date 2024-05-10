@@ -3,12 +3,12 @@ galeria.css
 
 .gallery {
     display: none;
-    width: 100%; /* Ajustar el ancho al 100% */
-    height: auto; /* Altura automática para mantener la proporción */
+    width: 100%; 
+    height: auto; 
 }
 
 .gallery-container {
     position: relative;
-    max-width: 800px; /* Ancho máximo del contenedor */
+    max-width: 800px; 
     margin: auto;
 }

@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 body, html {
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ body, html {
     padding: 20px;
 }
 
-/* Estilos para el encabezado */
+
 .header {
     background-color: #333;
     color: white;
@@ -63,7 +63,7 @@ input[type="text"] {
     background-color: #333;
 }
 
-/* Estilos para el carrito de compras */
+
 .shopping-cart {
     background-color: white;
     margin: 20px auto;
@@ -91,13 +91,13 @@ input[type="text"] {
 }
 
 .product-details {
-    flex-grow: 1; /* El contenido crecerá para ocupar el espacio disponible */
-    margin-left: 20px; /* Separación entre la imagen y los detalles del producto */
+    flex-grow: 1; 
+    margin-left: 20px; 
 }
 
 .product-name {
     margin: 0;
-    text-align: center; /* Centra el texto */
+    text-align: center; 
 }
 
 .product-details h3, .product-details p {
@@ -105,7 +105,7 @@ input[type="text"] {
     color: #333;
 }
 
-/* Estilos para dispositivos pequeños */
+
 @media (max-width: 768px) {
     .container {
         padding: 10px;
@@ -113,27 +113,27 @@ input[type="text"] {
 
     input[type="text"] {
         width: 100%;
-        margin-right: 0; /* Elimina el margen derecho en dispositivos pequeños */
+        margin-right: 0; 
     }
 
     .cart-item {
         flex-direction: column;
-        text-align: center; /* Centra los elementos en dispositivos pequeños */
+        text-align: center; 
     }
 
     .product-image {
-        margin-bottom: 10px; /* Espacio entre la imagen y los detalles del producto */
+        margin-bottom: 10px; 
     }
 
     .product-details {
-        margin-left: 0; /* Elimina el margen izquierdo en dispositivos pequeños */
+        margin-left: 0; 
     }
 }
 
-/* Estilos para dispositivos extra pequeños */
+
 @media (max-width: 576px) {
     .button, .search-button {
-        font-size: 14px; /* Reducir el tamaño del botón en dispositivos extra pequeños */
+        font-size: 14px; 
     }
 }
 

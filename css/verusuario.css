@@ -59,6 +59,6 @@ th {
         padding: 10px;
     }
     table {
-        font-size: 14px; /* Reducir el tamaño de fuente en dispositivos móviles */
+        font-size: 14px; 
     }
 }

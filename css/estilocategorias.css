@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -11,17 +11,17 @@ header {
     color: white;
     padding: 20px;
     display: flex;
-    justify-content: space-between; /* Alinear elementos horizontalmente */
-    align-items: center; /* Alinear elementos verticalmente */
+    justify-content: space-between; 
+    align-items: center; 
 }
 
 h1 {
     margin: 0;
-    font-size: 24px; /* Tamaño del título */
+    font-size: 24px; 
 }
 
 .logo-image {
-    height: 40px; /* Tamaño del logo */
+    height: 40px; 
 }
 
 .section-container {
@@ -59,7 +59,7 @@ p {
     background-color: #333;
 }
 
-/* Estilos específicos para el catálogo de productos */
+
 .pistola-box {
     width: 200px;
     background-color: #333;
@@ -86,7 +86,7 @@ p {
     box-shadow: 0 0 10px white;
 }
 
-/* Estilos para los filtros */
+
 .filtro {
     background-color: #fff;
     padding: 20px;
@@ -103,12 +103,12 @@ p {
     margin-bottom: 5px;
 }
 
-/* Estilos para el selector de filtro */
+
 #filter {
     margin-bottom: 20px;
 }
 
-/* Estilos para la columna de filtros */
+
 .filtro-option select {
     width: 100%;
     padding: 8px;
@@ -116,7 +116,7 @@ p {
     border: 1px solid #ccc;
 }
 
-/* Estilos para el botón de filtrar y limpiar filtros */
+
 .button-container button {
     padding: 10px 20px;
     margin: 10px;
@@ -133,22 +133,22 @@ p {
     background-color: #333;
 }
 
-/* Estilos para dispositivos de pantalla pequeña */
+
 @media screen and (max-width: 768px) {
     header {
-        padding: 15px; /* Reducir el espacio en el encabezado */
+        padding: 15px; 
     }
 
     h1 {
-        font-size: 20px; /* Reducir el tamaño del título */
+        font-size: 20px; 
     }
 
     .logo-image {
-        height: 30px; /* Reducir el tamaño del logo */
+        height: 30px; 
     }
 
     .back-button {
-        padding: 6px 10px; /* Reducir el tamaño del botón Volver */
+        padding: 6px 10px; 
     }
 
     .section-container {
@@ -157,14 +157,14 @@ p {
     }
 
     .pistola-box {
-        width: calc(50% - 20px); /* Ajustar el tamaño de las cajas de pistola */
+        width: calc(50% - 20px); 
     }
 }
 
-/* Estilos para dispositivos de pantalla extra pequeña */
+
 @media screen and (max-width: 576px) {
     .pistola-box {
-        width: calc(100% - 20px); /* Ajustar el tamaño de las cajas de pistola */
+        width: calc(100% - 20px); 
     }
 }
 
